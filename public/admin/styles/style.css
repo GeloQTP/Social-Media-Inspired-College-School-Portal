@@ -1,0 +1,14 @@
+ .custom-tooltip-view {
+     --bs-tooltip-bg: var(--bs-primary);
+     --bs-tooltip-color: var(--bs-white);
+ }
+
+ .custom-tooltip-mark {
+     --bs-tooltip-bg: var(--bs-success);
+     --bs-tooltip-color: var(--bs-white);
+ }
+
+ .custom-tooltip-archive {
+     --bs-tooltip-bg: var(--bs-warning);
+     --bs-tooltip-color: var(--bs-dark);
+ }
