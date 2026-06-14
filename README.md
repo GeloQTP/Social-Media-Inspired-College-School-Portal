@@ -36,27 +36,11 @@ The portal includes a badge system:
 3. Update `includes/db_connect.php` or `includes/database.env` with your DB credentials.
 4. Start your local server and open: `http://localhost/Modern%20Student%20Portal/public/visitors/LoginPage.php`.
 
-## Quick API Tests (curl examples)
-
-- Fetch badges for user 67 (as admin or allowed user):
-
-```bash
-curl "http://localhost/Modern%20Student%20Portal/api/getUserBadges.php?user_id=67" \
-	-b cookies.txt -c cookies.txt
-```
-
-- Assign a badge (Admin session required):
-
-```bash
-curl -X POST "http://localhost/Modern%20Student%20Portal/api/giveBadge.php" \
-	-d "user_id=67" -d "badge_icon=bi-award-fill" -d "badge_description=Dean's Lister" \
-	-b cookies.txt -c cookies.txt
-```
 
 Note: Use cookie jar (`-b`/`-c`) to include session authentication (login first).
 
 ## Admin workflow for badges
-Sample Admin Account: TRCAdmin@gmail.com; Password: 123
+Admin Login Account: TRCAdmin@gmail.com; Password: 123
 1. Go to `public/admin/Pages/UserManagement.php` (Admin only).
 2. Click the award icon in the Actions column to open the Badge Manager modal.
 3. Create a badge (icon, description, date) and assign it; the modal lists assigned badges.
